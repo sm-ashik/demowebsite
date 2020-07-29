@@ -1,0 +1,39 @@
+/*body{
+	background-color: red;
+}
+.container{
+	width: 100%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.second{
+	position: relative;
+	left: 30px;
+}
+.rect{
+	display: inline-block;
+	margin: 10px;
+	content: '';
+	width: 200px;
+	height: 50px;
+	transform: skewX(20deg);
+	background: white;
+}
+
+.second{
+	 display: inline-block;
+	 width: 1000px;
+	animation: anime 2s linear infinite;
+}
+
+@keyframes anime{
+	0%{position: relative; left: 0;}
+	25%{position: relative; left: 500px;}
+	50%{position: relative; left: 500px; bottom: 0;}
+	100%{position: relative; left: 500px bottom: 100px;}
+
+}
+
+*/

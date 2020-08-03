@@ -1,6 +1,6 @@
 body{
 	background-color: #eee;
-	font-family: arial;	
+	font-family: arial;
 	margin: 0;
 }
 header{
@@ -8,23 +8,23 @@ header{
 	margin: 0;
 	color: #fff;
 }
-header h1, header p{	
+header h1, header p{
 	display: block;
 	margin: 0;
 	padding: 15px;
 }
 header h1{
-	background-color: #244985; 	
+	background-color: #244985;
 }
 header p{
-	background-color: #3062b3; 
+	background-color: #3062b3;
 	border-bottom: 5px solid #689bed;
 }
 address{
 	position: absolute;
-	bottom: 0;
-	left: 0;	
-	width: 100%;	
+	/*bottom: 0;*/
+	left: 0;
+	width: 100%;
 	color: #fff;
 	border-top: 5px solid #689bed;
 }
@@ -40,4 +40,26 @@ address{
 }
 #tab{
 	padding-left:20px;
+}
+
+section{
+	margin: auto 30px;
+}
+.contentPara{
+	color: #ff0;
+	font-weight: bold;
+	overflow: auto;
+
+	column-count: 2;
+	column-gap: 5px;
+
+	width: 50vw;
+	height: 50vh;
+
+	margin-bottom: 300px;
+	background: linear-gradient(to bottom right, rgba(255, 0, 255, 0.5) 10%, #f0c 30%);
+	border: 5px solid #f0c;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 0 auto 100px;
 }

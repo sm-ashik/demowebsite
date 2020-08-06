@@ -8,7 +8,7 @@ body{
 	background-size: auto;
 	background-repeat: no-repeat;
 	height: 100vh;
-	color: #fff;
+	color: green;
 }
 .body{
 	background: linear-gradient(to top right,rgba(244,7,254,0.85), rgba(24,198,225,0.85));

@@ -4,17 +4,12 @@
 	font-family: arial;
 }
 body{
-	background-image: url('../images/background.jpg');
-	background-size: cover;
+	background-image: linear-gradient(to top right,rgba(244,7,254,0.85), rgba(24,198,225,0.85)), url('../images/background.jpg');
+	background-size: auto;
 	background-repeat: no-repeat;
-	/*height: 100vh;*/
+	height: 100vh;
 	color: #fff;
 }
-.body{
-	background: linear-gradient(to top right,rgba(244,7,254,0.85), rgba(24,198,225,0.85));
-	height: 100vh;
-}
-
 #header{
 	font-size: 2.5em;
 	text-align: center;
@@ -63,12 +58,12 @@ footer p{
 }
 
 @media screen and (max-width: 800px){
-	.body{
-		color: red;
-		height: 100vh;
+	body{
+		height: 100%;
 	}
 	#header{
-		padding-top: 40%;
+		color: red;
+		padding-top: 100px;
 		font-size: 3.5em;
 	}
 	#subheader{
@@ -88,5 +83,6 @@ footer p{
 	footer{
 		margin-top: 100px;
 		font-size: 2.1em;
+		padding-bottom: 100px;
 	}
 }

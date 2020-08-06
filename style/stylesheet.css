@@ -19,7 +19,7 @@ body{
 	font-size: 2.5em;
 	text-align: center;
 	font-weight: 900;
-	padding: 5% 10% 20px;
+	padding: 120px 10% 20px;
 }
 #subheader{
 	font-size: 1.5em;
@@ -62,9 +62,10 @@ footer p{
 	margin: 0;
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (max-width: 800px){
 	.body{
-		height: 200%;
+		color: red;
+		height: 250%;
 	}
 	#header{
 		padding-top: 40%;

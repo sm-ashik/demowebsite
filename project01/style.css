@@ -1,0 +1,61 @@
+body{
+	margin: 0;
+	font-family: arial;
+	color: #926239; 
+}
+#showcase{
+	background-image: url('beachshowcase.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 30px;
+
+	text-align: center;
+}
+#mainHeading{	
+	font-size: 50px;
+	line-height: 0;
+}
+
+#subHeading{
+	margin-top: 0;
+	line-height: 1.5;
+	font-size: 20px;
+}
+#readMore{
+	font-family: arial;
+	font-size: 20px;
+	color: #926239;
+
+	padding: 15px 20px;
+
+	border: 1px solid #926239;
+	background-color: transparent;
+	border-radius: 10px;
+}
+	#readMore:hover{
+		border-color: transparent;
+		color: #f4f4f4;
+		background-color: #926239; 
+	}
+.full, .third{
+	text-align: center;
+	font-size: 20px;
+	line-height: 1.5;
+	padding: 20px;
+}
+section{
+	background-color: #f4f4f4;
+}
+.full.one, .third.one, .third.three{
+	background-color: #926239;
+	color: #fff;
+}
+.flex{
+	display: flex;		
+}

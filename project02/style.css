@@ -174,7 +174,7 @@ nav{
 		width: 100%;
 	}
 
-.float{
+.float, a{
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -193,8 +193,8 @@ nav{
 	cursor: pointer;
 	text-decoration: none;
 
-	opacity: 50%;
+	opacity: 70%;
 }
 	.float:hover{
-		opacity: 80%;
+		opacity: 90%;
 	}

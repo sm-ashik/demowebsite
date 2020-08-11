@@ -244,10 +244,11 @@ a .fa-angle-up{}
   	.logo{margin-bottom: 20px;}
   	nav a{padding-left: 0;}
   	nav a:not(:last-child){padding-right: 15px;}
-  	#projects{	grid-template-columns: 1fr 1fr; }
+  	#projects{grid-template-columns: 1fr 1fr; }
   }
-  @media screen and (max-width: 800px){
+  @media screen and (max-width: 900px){
   	#projects{grid-template-columns: 1fr;}
+	 nav a:not(:last-child){padding-right: 0;}
   	nav a{padding-left: 0;}
   	#middle{padding: 0 10px;}
  }

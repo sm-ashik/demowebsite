@@ -1,58 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Recursive:wght@300;400;700&display=swap" rel="stylesheet">
 
-	<meta charset="utf-8">
-
-	<link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&family=Recursive:wght@600;900&display=swap" rel="stylesheet">
-
-	<script src="https://kit.fontawesome.com/3962476a60.js" crossorigin="anonymous"></script>
-
-	<link rel="stylesheet" type="text/css" href="style/stylesheet.css">
-
-	<link rel="icon" type="image/jpg" href="chalkboard-teacher-solid.svg">
-
-	<title>Demo Website</title>
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+	<!-- STYLE -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Meta data -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Title -->
+	<title>Ashik's Portfolio</title>
 </head>
 
 <body>
-<div class="body">
+	<!-- HEADER -->
 	<header>
-		<h1 id="header">This is a demo website!</h1>
-		<p id="subheader">This website contains no commercial information. This is for learning purpose only.
+		<div class="backgroundHeader">
+			<div class="logo">ashik.</div>
+			<nav>
+				<a href="#about">About</a>
+				<a href="#projects">Projects</a>
+				<a href="#contact">Contact</a>
+			</nav>
+		</div>
+		
 	</header>
 
-<footer>
-		<div class="footer">
-		<p id="writtenby"><i class="fas fa-address-book"></i>
-		Written By<br>
-		</p>
-
-		<div id="info">
-			
-				<p id="name"><b>S. M. Ashik Al Mashrafi</b></p>
-				
-				<p>Rajshahi University of Engineering &amp; Technology</p>
-			
-		</div>
-	</div>
-	</footer>
-
-	<section>
-		<h2>Projects</h2>
-		<code>(Click to Open)</code>
-		<div class="projects">
-			<a class="items" href="project01/beach.html">Landing Page</a>
-			<a class="items" href="project02/restaurant.html">Restaurant Website</a>
-			<a class="items" href="project03/grid.html">Responsive Website</a>
-			<a class="items" href="project04/photography.html">Photography</a>
-			<a class="items">Landing Page</a>
-			<a class="items">Landing Page</a>
+	<!-- COVER -->
+	<section id="about">
+		<div class="backgroundCover">
+			<div id="coverHeader">Hello!</div>
+			<div id="coverSubHeader">My name is Ashik. I am learning web designing</div>
+			<button id="coverButton"><a href="#projects">Projects</a></button>
 		</div>
 	</section>
 
+	<!-- PROJECTS -->
+	<section id="projects">
+
+		<div class="container">
+			<a href="../project01/beach.html">
+			<img src="project01.png">
+			<div class="content">
+				Landing Page
+			</div>
+			</a>
+		</div>
+
+		<div class="container">
+			<a href="project02/restaurant.html">
+			<img src="project02.jpg">
+			<div class="content">
+				Restaurant</div>
+			</a>
+		</div>	
+
+		<div class="container">
+			<a href="project03/grid.html">
+			<img src="project03.jpg">
+			<div class="content">
+				Responsive 01
+			</div>
+			</a>
+		</div>	
+
+		<div class="container">
+			<a href="project04/photography.html">
+			<img src="project04.jpg">
+			<div class="content">
+				Responsive 02
+			</div>
+			</a>
+		</div>	
 	
-</body>
+	</section>
+
+	<!-- CONTACT -->
+	<section id="contact">
+		<div id="contactHeader">Contact me on</div><div>
+		<i class="fab fa-facebook-square"></i>
+		<i class="fab fa-twitter-square"></i>
+		<i class="fab fa-youtube-square"></i>
+		<i class="fab fa-instagram-square"></i>
+	</div>
+	</section>
+
+	<!-- FOOTER -->
+	<footer>Created by <span>&copy; S. M. Ashik Al Mashrafi</span></footer>
 </body>
 </html>

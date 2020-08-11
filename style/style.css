@@ -39,7 +39,6 @@ header{
 .backgroundHeader{
 	display: flex;
 	align-items: center;
-
 }
 .logo{
 	width: 150px;
@@ -247,5 +246,10 @@ a .fa-angle-up{}
   	nav a:not(:last-child){padding-right: 15px;}
   	#projects{	grid-template-columns: 1fr 1fr; }
   }
+  @media screen and (max-width: 800px){
+  	#projects{grid-template-columns: 1fr;}
+  	nav a{padding-left: 0;}
+  	#middle{padding: 0 10px;}
+ }
 
 

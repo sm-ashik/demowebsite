@@ -1,3 +1,10 @@
+body{
+	--darkblue: #465C7A;
+	--blue: #0080ff;
+	--white: #fff;
+}
+
+
 *{
 	margin: 0;
 	padding: 0;
@@ -12,8 +19,7 @@ body{
 	font-family: Recursive, sans-serif;
 	font-size: 1.2em; 
 
-	background-color: #DAEAED;
-	color: #465C7A;
+	background-color: var(--white);
 }
 
 
@@ -21,8 +27,10 @@ body{
 	 HEADER
   ===========*/
 header{
-	background: #465C7A;
-	padding: 20px 40px 30px;
+	background: var(--blue);
+	color: var(--white);
+	
+	padding: 20px 50px 30px;
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
 	box-shadow: 0 5px 20px rgba(0,0,0,0.3);
@@ -34,22 +42,20 @@ header{
 
 }
 .logo{
-	font-family: 'Oleo Script';
-	font-size: 2em;
-
-	color: #fff;
-
-	width: 100px;
+	width: 150px;
 	flex: 0 0 40%;
+}
+.logo img{
+	width: 150px;
 }
 nav{
 	flex: 0 0 60%;
 	direction: rtl;
 }
 nav a{
-	text-decoration: none;
-	color: #fff;
+	color: var(--white);
 
+	text-decoration: none;	
 	padding-left: 50px; 
 }
  nav a:hover{
@@ -61,7 +67,8 @@ nav a{
 	 COVER
   ===========*/
   #about{
-  	background: #333 url(heroimage.jpg);
+  	color: var(--darkblue);
+  	background: var(--white) url(../images/heroimage.jpg);
   	box-shadow: 0 5px 20px rgba(0,0,0,0.3);
   	border-radius: 10px;
 
@@ -78,6 +85,7 @@ nav a{
  	align-items: center;
  }
  #coverHeader{
+
  	font-size: 3em;
  	font-weight: 800;
  }
@@ -91,7 +99,8 @@ nav a{
  	padding: 10px 20px;
 
  	background-color: transparent;
- 	border: 1px solid #465C7A;
+ 	color: var(--darkblue);
+ 	border: 1px solid var(--darkblue);
  	
  	border-radius: 50px;
  	transition: all 0.2s linear;
@@ -103,7 +112,7 @@ nav a{
  	}
  #coverButton a{
  	text-decoration: none;
- 	color: #465C7A;
+ 	color: var(--darkblue);;
  }
 
 
@@ -127,8 +136,8 @@ nav a{
  	box-shadow: 0 5px 20px rgba(0,0,0,0.3);
  	text-align: center;
 
- 	background-color: #465C7A;
- 	color: #fff;
+ 	background-color: var(--blue);;
+ 	color: var(--white);
 
  	padding: 20px;
 
@@ -158,10 +167,10 @@ nav a{
 
 	height: 200px;
 
-	background: url(heroimage.jpg);
+	background: var(--white) url(../images/heroimage.jpg);
 	background-size: cover;
 	box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-	color: #465C7A;
+	color: var(--darkblue);;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px; 
  }
@@ -187,25 +196,50 @@ nav a{
 	 FOOTER
   ===========*/
  footer{
- 	background-color: #465C7A;
- 	color: #fff;
+ 	background-color: var(--blue);;
+ 	color: var(--white);
  	text-align: center;
  	box-shadow: 0 5px 20px rgba(0,0,0,0.3);
  	padding: 20px;
  }
  span{
- 	color: #00BFFE;
+ 	font-style: italic;
  }
+
+
+/*===========
+	 FLOAT
+  ===========*/
+a .fa-angle-up{}
+ .fa-angle-up{
+ 	position: fixed;
+ 	bottom: 5%;
+ 	right: 2%;
+ 	color: var(--white);
+ 	background: var(--blue);
+ 	border-radius: 10px;
+ 	box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+
+ 	width: 50px;
+ 	height: 50px;
+ 	text-align: center;
+
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ }
+
+ 
 
 /*===========
 	 MEDIA
   ===========*/
   @media screen and (max-width: 1200px){
-  	#projects{
-	grid-template-columns: 1fr 1fr; 
-
-}
-  }
+  	#projects{grid-template-columns: 1fr 1fr;}
+ }
+ @media screen and (max-width: 950px){
+ 	.fa-angle-up{right: 0%;}
+ }
   @media screen and (max-width: 900px){
   	.backgroundHeader{flex-direction: column;}
   	.logo{margin-bottom: 20px;}
@@ -213,3 +247,5 @@ nav a{
   	nav a:not(:last-child){padding-right: 15px;}
   	#projects{	grid-template-columns: 1fr 1fr; }
   }
+
+

@@ -13,7 +13,7 @@ header{
 	text-align: center;
 }
 .container{
-	max-width: 1150px;
+	width: 80vw;
 	margin: 0 auto;
 }
 .innerContainer{
@@ -31,14 +31,14 @@ header{
 	flex: 0 1 60vw;
 }
 #mainHeading{
-	font-size: 4em;
+	font-size: 3.3em;
 	font-weight: 500;
 	margin-bottom: 0;
 }
 #subHeading{
 	margin-top: 10px;
 	margin-bottom: 40px;
-	font-size: 1.4em;
+	font-size: 1.3em;
 	color: #888;
 }
 #viewWork{
@@ -84,7 +84,7 @@ header{
 
 footer{
 	text-align: center;
-	margin: 100px 0 50px;
+	margin: 100px 0 100px;
 }
 #footerHeader{
 	font-size: 4em;
@@ -117,3 +117,13 @@ footer{
 	.float:hover{
 		opacity: 80%;
 	}
+	
+
+@media screen and (max-width: 900px){
+	
+	header{flex-direction: column;}
+	#coverLeft{padding: 100px}
+	#coverRight{background-position: top;}
+	#viewWork{margin-bottom: 40px;}
+	.galleryText{margin: auto 20px;}
+}

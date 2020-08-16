@@ -242,14 +242,14 @@ a .fa-angle-up{}
   @media screen and (max-width: 900px){
   	.backgroundHeader{flex-direction: column;}
   	.logo{margin-bottom: 20px;}
-  	nav a{padding-left: 0;}
+  	nav a{padding-left: 0; display: block; text-align: center;}
   	nav a:not(:last-child){padding-right: 15px;}
   	#projects{grid-template-columns: 1fr 1fr; }
   }
   @media screen and (max-width: 900px){
   	#projects{grid-template-columns: 1fr;}
 	 nav a:not(:last-child){padding-right: 0;}
-  	nav a{padding-left: 0;}
+  	nav a{padding-left: 0; display: block; text-align: center;}
   	#middle{padding: 0 10px;}
  }
 

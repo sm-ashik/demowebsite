@@ -151,6 +151,12 @@ nav a{
  .container:hover{
  	transform: scale(1.02);
  }
+ .container span{
+ 	visibility: hidden;
+ }
+ .container:hover > .container span{
+ 	visibility: visible;
+ }
 
 
   /*=============
@@ -242,15 +248,18 @@ a .fa-angle-up{}
   @media screen and (max-width: 900px){
   	.backgroundHeader{flex-direction: column;}
   	.logo{margin-bottom: 20px;}
-  	nav a{padding-left: 0; display: block; text-align: center;}
-  	nav a:not(:last-child){padding-right: 15px;}
-  	#projects{grid-template-columns: 1fr 1fr; }
-  }
-  @media screen and (max-width: 900px){
+  	nav a{
+  		padding-left: 0;
+  		display: block;
+  		text-align: center;
+  		padding-bottom: 10px;
+  		}
+  	
+  	#projects{grid-template-columns: 1fr 1fr;} 	
+
+ }
+  @media screen and (max-width: 800px){
   	#projects{grid-template-columns: 1fr;}
-	 nav a:not(:last-child){padding-right: 0;}
-  	nav a{padding-left: 0; display: block; text-align: center;}
-  	#middle{padding: 0 10px;}
  }
 
 
